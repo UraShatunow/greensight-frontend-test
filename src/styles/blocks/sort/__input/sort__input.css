@@ -1,0 +1,22 @@
+
+.sort__input {
+  width: 100%;
+  padding: 15px 0px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+
+  font-family: 'Rubik';
+  font-size: 16px;
+}
+
+.sort__input::placeholder {
+  color: #A3A6A9;
+}
+
+@media screen and (max-width: 1023px) {
+  .sort__input {
+    padding: 12px 0px;
+  }
+}
+

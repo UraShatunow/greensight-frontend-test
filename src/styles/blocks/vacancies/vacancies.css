@@ -1,0 +1,11 @@
+@import url(__item/vacancies__item.css);
+@import url(__info/vacancies__info.css);
+@import url(__text/vacancies__text.css);
+@import url(__button/vacancies__button.css);
+@import url(__inner/vacancies__inner.css);
+@import url(__inner-text/vacancies__inner-text.css);
+
+.vacancies {
+  margin-top: 30px;
+}
+

@@ -1,0 +1,13 @@
+
+.title {
+  font-family: 'Rubik';
+  font-size: 64px;
+  margin: 80px 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .title {
+    font-size: 32px;
+    margin: 60px 0 40px;
+  }
+}

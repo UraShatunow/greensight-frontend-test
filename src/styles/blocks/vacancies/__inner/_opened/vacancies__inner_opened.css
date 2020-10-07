@@ -1,0 +1,7 @@
+div .vacancies__inner_opened {
+  height: 100%;
+}
+
+div .vacancies__inner_opened:after {
+  display: none;
+}

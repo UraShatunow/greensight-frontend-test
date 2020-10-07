@@ -1,0 +1,41 @@
+@import url(_opened/vacancies__inner_opened.css);
+
+.vacancies__inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  height: 280px;
+  overflow: hidden;
+}
+
+.vacancies__inner h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto';
+  font-size: 32px;
+  line-height: 160%;
+}
+
+.vacancies__inner:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  background-color: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .vacancies__inner h1, h2, h3, h4, h5, h6 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .vacancies__inner {
+    height: 400px;
+  }
+}

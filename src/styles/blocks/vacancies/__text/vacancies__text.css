@@ -1,0 +1,14 @@
+
+.vacancies__text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+@media screen and (max-width: 1023px) {
+  .vacancies__text {
+    width: 100%;
+    margin-top: 18px;
+  }
+}

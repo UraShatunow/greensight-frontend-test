@@ -1,0 +1,13 @@
+
+.sort__item {
+  width: 40%;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .sort__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

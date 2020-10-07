@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Greensight frontend test</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css%>">
+</head>
+
+<body>
+
+    <div class="root">
+
+        <h2 class="title root__section">List of vacancies</h2>
+        
+        <div class="sort root__section">
+            <div class="sort__item">
+                <h4 class="sort__heading">Form</h4>
+                <select class="sort__select">
+                    <option class="sort__option">Not Selected</option> 
+                    <option class="sort__option">Full time</option> 
+                    <option class="sort__option">Half time</option> 
+                    <option class="sort__option">Part time</option> 
+                </select>
+            </div>
+            <div class="sort__item">
+                <h4 class="sort__heading">Position</h4>
+                <input class="sort__input" type="text" placeholder="Unspecified">
+            </div>
+            <a class="sort__clear" href="#">Clear sorting <span class="sort__clear_cross">&#10006;</span></a>
+        </div>
+        
+        <div class="vacancies root__section"></div>
+
+        <button class="show-more-button">Show more</button>
+
+        <h2 class="title root__section">Leave a request</h2>
+
+        <footer class="footer root__section">
+            <div class="footer__request request">
+                <form class="request__form" name="request" action="http://httpbin.org/post" method="POST">
+                    <div class="request__field">
+                        <label class="request__label">Your name</label>
+                        <input class="request__input" type="text" name="name" placeholder="Please introduce yourself" required>
+                    </div>
+                    <div class="request__field">
+                        <label class="request__label">Email</label>
+                        <input class="request__input" type="email" name="email" placeholder="ivanov@mail.ru" required>
+                    </div>
+                    <div class="request__field">
+                        <label class="request__label">Phone number</label>
+                        <input class="request__input" type="text" name="name" placeholder="+7 (999) 123-45-78" required>
+                    </div>
+                    <div class="request__field">
+                        <label class="request__label">Comment</label>
+                        <input class="request__input" type="text" name="name" placeholder="Message text">
+                    </div>
+                    <button class="request__button" type="submit">Send</button>
+                    <p class="request__warning">By clicking "Send" you confirm your consent to the <a class="request__link" href="#">processing of personal data</a></p>
+                </form>
+            </div>
+            <div class="footer__info">
+                <p class="footer__paragraph">We will advise you and help you start a new project</p>
+                <p class="footer__contacts">+7 499 391-66-69</p>
+                <p class="footer__contacts">mail@greensight.ru</p>
+                <p class="footer__address">Moscow, Zelenograd, Central Ave., bldg. 305, 3rd floor</p>
+                <a class="footer__link" href="#">How to get there?</a>
+            </div>
+        </footer>
+
+        <script src="<%=htmlWebpackPlugin.files.chunks.main.entry%>"></script>
+
+    </div>
+
+</body>
+</html>

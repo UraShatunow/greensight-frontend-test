@@ -1,0 +1,25 @@
+
+.sort__clear {
+  text-decoration: none;
+  font-size: 16px;
+  color: #A3A6A9;
+
+  position: absolute;
+  right: 0;
+  
+  transition: 0.1s;
+}
+
+.sort__clear:hover {
+  opacity: 0.6;
+}
+
+.sort__clear span {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1023px) {
+  .sort__clear {
+    position: relative;
+  }
+}
